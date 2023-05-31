@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Journaling Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .journal-entry {
+      margin-bottom: 20px;
+    }
+    
+    .entry-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .entry-date {
+      color: #888;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    
+    .entry-content {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    
+    .journal-form {
+      margin-bottom: 20px;
+    }
+    
+    .form-field {
+      margin-bottom: 10px;
+    }
+    
+    .form-field label {
+      display: block;
+      font-weight: bold;
+    }
+    
+    .form-field textarea {
+      width: 100%;
+      height: 100px;
+      resize: vertical;
+    }
+    
+    .form-field input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+    
+    .form-field input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Journal</h1>
+  
+  <div class="journal-form">
+    <h2>New Journal Entry</h2>
+    <form action="#" method="post">
+      <div class="form-field">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+      </div>
+      <div class="form-field">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-field">
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" required></textarea>
+      </div>
+      <div class="form-field">
+        <input type="submit" value="Add Entry">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
